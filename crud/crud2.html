@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD de Produtos</title>
+</head>
+<body>
+    <h2>CRUD de Produtos</h2>
+
+    <!-- Formulário para adicionar ou editar produtos -->
+    <form id="productForm">
+        <input type="hidden" id="productId">
+        <input type="text" id="productName" placeholder="Nome do Produto" required>
+        <input type="text" id="productPrice" placeholder="Preço do Produto" required>
+        <button type="submit">Salvar Produto</button>
+    </form>
+
+    <!-- Tabela para exibir produtos -->
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os produtos serão inseridos aqui -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
